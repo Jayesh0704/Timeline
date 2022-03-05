@@ -17,7 +17,7 @@ html {
   background-color: #111;
 }
 .timeline {
-  width: 120%;
+  width: 80%;
   height: auto;
   max-width: 120%;
   margin: 0 auto;
@@ -54,7 +54,7 @@ html {
     content: "";
     position: absolute;
     top: 0;
-    left: 2%;
+    left: 27%;
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
@@ -68,13 +68,13 @@ html {
   .timeline ul li:nth-child(odd) {
     float: left;
     clear: right;
-    transform: translateX(100px);
+    transform: translateX(400px);
     border-radius: 0px 20px 20px 20px;
   }
   .timeline ul li:nth-child(even) {
     float: right;
     clear: left;
-    transform: translateX(-650px);
+    transform: translateX(-200px);
     border-radius: 0px 20px 20px 20px;
   }
   .timeline ul li::before {
@@ -87,7 +87,7 @@ html {
     top: 0px;
   }
   .timeline ul li:nth-child(odd)::before {
-    transform: translate(-4258%, -50%);
+    transform: translate(-3508%, -50%);
     right: -30px;
   }
   .timeline ul li:nth-child(even)::before {
