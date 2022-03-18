@@ -13,95 +13,76 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10% 0;
+  padding: 100px 0;
   background-color: #111;
 }
 .timeline {
   width: 80%;
   height: auto;
-  max-width: 120%;
+  max-width: 800px;
   margin: 0 auto;
   position: relative;
-  float: left;
 }
 
 .timeline ul {
   list-style: none;
 }
 .timeline ul li {
-  padding: 2%;
+  padding: 20px;
   background-color: #1e1f22;
   color: white;
-  border-radius: 4%;
-  margin-bottom: 8%;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 .timeline ul li:last-child {
-  margin-bottom: 0%;
+  margin-bottom: 0;
 }
 .timeline-content h1 {
   font-weight: 500;
-  font-size: 115%;
-  line-height: 50%;
-  margin-bottom: 2%;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
 }
 .timeline-content p {
-  font-size: 90%;
+  font-size: 16px;
   line-height: 30px;
   font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 @media only screen and (min-width: 768px) {
   .timeline:before {
     content: "";
     position: absolute;
     top: 0;
-    left: 27%;
-    transform: translateX(-50%);
+    left: -10%;
+ 
     width: 2px;
     height: 100%;
     background-color: rgb(248, 182, 59);
   }
   .timeline ul li {
-    width: 50%;
+    width: 75%;
     position: relative;
-    margin-bottom: 5%;
+    margin-bottom: 50px;
   }
-  .timeline ul li:nth-child(odd) {
-    float: left;
-    clear: right;
-    transform: translateX(400px);
-    border-radius: 0px 20px 20px 20px;
-  }
-  .timeline ul li:nth-child(even) {
-    float: right;
-    clear: left;
-    transform: translateX(-200px);
-    border-radius: 0px 20px 20px 20px;
-  }
-  .timeline ul li::before {
+  
+  .timeline ul li::after {
     content: "";
     position: absolute;
     height: 20px;
     width: 20px;
     border-radius: 50%;
     background-color: rgb(248, 182, 59);
-    top: 0px;
+    top: 0;
+    left:-13.5%;
+    transform: translate(-50%,-50%);
   }
-  .timeline ul li:nth-child(odd)::before {
-    transform: translate(-3508%, -50%);
-    right: -30px;
-  }
-  .timeline ul li:nth-child(even)::before {
-    transform: translate(-295%, -50%);
-    left: -30px;
-  }
-  
-  .timeline ul li:hover::before {
+  .timeline ul li:hover::after {
     background-color: rgb(170, 129, 15);
-    
   }
-}
-
-.timeline-content:hover{
-    transform: scale(1.02);
-   
 }
